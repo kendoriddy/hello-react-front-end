@@ -1,4 +1,4 @@
-import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import { greetingsApi } from "./features/apiSlice";
 export const store = configureStore({
   reducer: {
