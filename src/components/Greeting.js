@@ -1,6 +1,6 @@
-import { useGetGreetingQuery } from "../features/apiSlice";
+import { useGetGreetingQuery } from '../features/apiSlice';
 
-export const Greeting = () => {
+const Greeting = () => {
   const handleClick = () => {
     window.location.reload();
   };
@@ -8,12 +8,16 @@ export const Greeting = () => {
   if (isLoading) return <h1>Loading...</h1>;
   return (
     <>
-      <button className="button" onClick={handleClick}>
+      <button type="button" className="button" onClick={handleClick}>
         Greet
       </button>
       <div className="greet">
-        Greeting of the Day: <span>{greetingOfTheMoment?.name}</span>
+        Greeting of the Day:
+        {' '}
+        <span>{greetingOfTheMoment?.name}</span>
       </div>
     </>
   );
 };
+
+export default Greeting;

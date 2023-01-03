@@ -1,11 +1,11 @@
-import "./App.css";
-import { Greeting } from "./components/Greeting";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import './App.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Greeting from './components/Greeting';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: <Greeting />,
     },
   ]);
